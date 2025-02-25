@@ -11,15 +11,16 @@
 Open a terminal and run:  
 
 ```bash
-git clone https://github.com/AyhamB/INFO-5940.git
-cd INFO-5940
+git clone https://github.com/Zuoooooo/INFO5940-Assignment-1.git
 ```
+
+open this folder's(INFO5940-Assignment-1) terminal
 
 ---
 
 ### 2️⃣ Open in VS Code with Docker  
 
-1. Open **VS Code**, navigate to the `INFO-5940` folder.  
+1. Open **VS Code**, navigate to the `INFO5940-Assignment-1` folder.  
 2. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) and search for:  
    ```
    Remote-Containers: Reopen in Container
@@ -42,7 +43,7 @@ Since `docker-compose.yml` expects environment variables, follow these steps:
    touch .env
    ```
 
-2. Add your API key and base URL:  
+2. Add the class API key and base URL:  
 
    ```plaintext
    OPENAI_API_KEY=your-api-key-here
