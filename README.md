@@ -18,20 +18,7 @@ open this folder's(INFO5940-Assignment-1) terminal
 
 ---
 
-### 2️⃣ Open in VS Code with Docker  
-
-1. Open **VS Code**, navigate to the `INFO5940-Assignment-1` folder.  
-2. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) and search for:  
-   ```
-   Remote-Containers: Reopen in Container
-   ```
-3. Select this option. VS Code will build and open the project inside the container.  
-
-📌 **Note:** If you don’t see this option, ensure that the **Remote - Containers** extension is installed.  
-
----
-
-### 3️⃣ Configure OpenAI API Key  
+### 2️⃣ Configure OpenAI API Key  
 
 Since `docker-compose.yml` expects environment variables, follow these steps:  
 
@@ -81,14 +68,23 @@ Since `docker-compose.yml` expects environment variables, follow these steps:
 Now, API key will be automatically loaded inside the container.  
 
 ---
+# Step 2: 
 
-# Step 2: Install the reuired Library
+After that, open docker and select "images" run "file name" -- info5940-assignment-1
+
+# Step 3: 
+
+Return to VScode, press shift+command+p, select: Dev Containers: Rebuild and Reopen in Container
+
+Select From 'docker-compose.yml' and then directly click 'OK'
+
+# Step 4: Install the reuired Library
 
 1. pip install pdfminer.six
 
 Now you can see there is no underline on the top library list and make sure the library is a new version.
 
-# Step 3 Run the application
+# Step 5 Run the application
 
 In the terminal, navigate to the directory containing chatbot.py, then run:
 
