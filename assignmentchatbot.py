@@ -69,7 +69,7 @@ else:
 
         # Retrieve relevant documents
         retriever = db.as_retriever(search_type="similarity", search_kwargs={"k": 2})
-        docs = retriever.invoke(prompt)  # <-- Fixed deprecated method usage
+        docs = retriever.invoke(prompt) 
 
         context = "\n\n".join([doc.page_content for doc in docs])
 
@@ -83,7 +83,7 @@ else:
 
         user_message = HumanMessage(content=f"Context: {context}\n\nQuestion: {prompt}")
 
-        response = chat.invoke([system_prompt, user_message])  # <-- Fixed `invoke` method usage
+        response = chat.invoke([system_prompt, user_message])  
 
         # Stream response
         with st.chat_message("assistant"):
