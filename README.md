@@ -92,3 +92,11 @@ In the terminal, navigate to the directory containing chatbot.py, then run:
 
 Open any link you want, and right now you can test
 
+# Feature
+When you haven't uploaded any files to the chatbot, if you ask questions like "What is my name?" or "Who is Ayham Boucher?", the chatbot will respond with "I don't know..." and indicate "Unknown source" in the answer.
+
+For more general questions like "What is LLM?", the chatbot will provide its own answer but still display "Unknown source" as there are no uploaded documents to reference.
+
+However, after uploading some files (for example, the Knowledge Base files from class, such as Cornell.txt and Duke.txt), if you ask "Who is Ayham Boucher?" again, the chatbot will provide a more specific response, such as "He teaches INFO-5940 at Cornell and INFO-6000 at Duke." The source will now be attributed to the uploaded files instead of "Unknown source."
+
+
